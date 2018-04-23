@@ -1,8 +1,5 @@
 package notes;
 
-/**
- * Created by shu on 19.03.2018.
- */
 public class JsonError {
     private String type;
     private String message;
