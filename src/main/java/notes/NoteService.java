@@ -57,13 +57,10 @@ public class NoteService {
         if (match.isPresent()) {
             matchIdx = nList.indexOf(match.get());
             originNote = nList.get(matchIdx);
-           // originNote.setId(note.getId());
             originNote.setTitle(note.getTitle());
             originNote.setText(note.getText());
-            //originNote.setDateCreate(note.getDateCreate());
             originNote.setDateUpdate(note.getDateUpdate());
             nList.set(matchIdx, originNote);
-          //  gson.toJson(nList);
             return Response.status(Response.Status.OK).build();
         } else {
             return Response.status(Response.Status.NOT_FOUND).build();
