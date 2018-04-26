@@ -1,7 +1,7 @@
 ====================================
 Linux
 ====================================
-curl -X GET http://localhost/notes/all
+curl -X GET http://localhost:8080/notes/all
 
 curl -X POST -i -H "Content-Type: application/json" -d '{"title":"3 заметка","text":"Текст третьей заметки"}' http://localhost:8080/notes/add
 
