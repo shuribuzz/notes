@@ -1,6 +1,7 @@
 package notes;
 
 import java.util.UUID;
+import static java.nio.charset.StandardCharsets.*;
 
 public class Note {
     private UUID id;
@@ -8,7 +9,13 @@ public class Note {
     private String text;
     private long date_create;
     private long date_update;
-
+/*
+    byte ptextTitle[] = sTitle.getBytes();
+    private String title = new String(ptextTitle, UTF_8);
+/*
+    byte ptextText[] = sText.getBytes(ISO_8859_1);
+    private String text = new String(ptextText, UTF_8);
+*/
     private Note(NoteBuilder builder){
         this.id = builder.id;
         this.title = builder.title;
@@ -52,7 +59,7 @@ public class Note {
     }
 
     public void setTitle(String title){
-        this.title = title;
+        this.title = title.substring(0,29);
     }
 
     public String getText() {
@@ -60,7 +67,7 @@ public class Note {
     }
 
     public void setText(String text){
-        this.text = text;
+        this.text = text.substring(0,499);
     }
 
     public long getDateCreate() {
@@ -92,12 +99,12 @@ public class Note {
         }
 
         public NoteBuilder title(String title){
-            this.title = title;
+            this.title = title.substring(0,29);
             return this;
         }
 
         public NoteBuilder text(String text){
-            this.text = text;
+            this.text = text.substring(0,499);
             return this;
         }
 
