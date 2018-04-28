@@ -23,6 +23,7 @@ curl -X GET http://localhost:8080/notes/all
 
 
 **POST**
+
 Запрос:
 curl -X POST -i -H "Content-Type: application/json" -d '{"title":"3 заметка","text":"Текст третьей заметки"}' http://localhost:8080/notes/add
 
@@ -31,6 +32,7 @@ curl -X POST -i -H "Content-Type: application/json" -d '{"title":"3 заметк
 
 
 **DELETE**
+
 Запрос:
 curl -X DELETE -i http://localhost:8080/notes/remove/id
 
@@ -38,6 +40,7 @@ curl -X DELETE -i http://localhost:8080/notes/remove/id
 200 OK. Если id не найден, то 404 Not Found
 
 **PUT**
+
 Запрос:
 curl -X PUT -i -H "Content-Type:application/json" -d '{"id":"id", "title":"new 2 заметка", "text":"обновлённая вторая заметка"}' http://localhost:8080/notes/id/update
 
