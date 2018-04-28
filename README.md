@@ -2,9 +2,9 @@
 
 Необходимые требования:
 
--Java Development Kit 8 (JDK8);
--Maven 3.0+;
--cURL 7.0+.
+*Java Development Kit 8 (JDK8);
+*Maven 3.0+;
+*cURL 7.0+.
 
 Запуск:
 1. открыть терминал и перейти в корень проекта notes
