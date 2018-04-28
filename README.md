@@ -2,11 +2,11 @@
 
 Необходимые требования:
 
-*Java Development Kit 8 (JDK8);
+-[Java Development Kit 8 (JDK8)](https://jdk8.java.net/download.html);
 
-*Maven 3.0+;
+-[Maven 3.0+](http://maven.apache.org/download.cgi);
 
-*cURL 7.0+.
+-[cURL 7.0+](http://curl.haxx.se/download.html).
 
 
 Запуск:
