@@ -14,6 +14,7 @@
 Далее ввод запросов:
 
 **GET**
+
 Запрос:
 curl -X GET http://localhost:8080/notes/all
 
