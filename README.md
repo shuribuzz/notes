@@ -1,6 +1,4 @@
-<h3>Запуск на Linux<h3>
-
-
+Запуск на Linux
 
 Необходимые требования:
 -Java Development Kit 8 (JDK8);
@@ -14,9 +12,8 @@
 4. открыть новое окно терминала и перейти в корень cURL
 
 Далее ввод запросов:
--------------------------
-GET
--------------------------
+
+**GET**
 Запрос:
 curl -X GET http://localhost:8080/notes/all
 
@@ -24,9 +21,7 @@ curl -X GET http://localhost:8080/notes/all
 200 OK
 
 
--------------------------
-POST
--------------------------
+**POST**
 Запрос:
 curl -X POST -i -H "Content-Type: application/json" -d '{"title":"3 заметка","text":"Текст третьей заметки"}' http://localhost:8080/notes/add
 
@@ -34,18 +29,14 @@ curl -X POST -i -H "Content-Type: application/json" -d '{"title":"3 заметк
 201 Created
 
 
--------------------------
-DELETE
--------------------------
+**DELETE**
 Запрос:
 curl -X DELETE -i http://localhost:8080/notes/remove/id
 
 Ответ:
 200 OK. Если id не найден, то 404 Not Found
 
--------------------------
-PUT
--------------------------
+**PUT**
 Запрос:
 curl -X PUT -i -H "Content-Type:application/json" -d '{"id":"id", "title":"new 2 заметка", "text":"обновлённая вторая заметка"}' http://localhost:8080/notes/id/update
 
