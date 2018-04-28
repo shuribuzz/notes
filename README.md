@@ -1,6 +1,7 @@
-Запуск на Linux
+**Запуск на Linux**
 
 Необходимые требования:
+
 -Java Development Kit 8 (JDK8);
 -Maven 3.0+;
 -cURL 7.0+.
